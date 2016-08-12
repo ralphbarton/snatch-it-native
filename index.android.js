@@ -6,12 +6,12 @@ import {
   View
 } from 'react-native';
 
-var Tiger = require('./Tiger');
+var MainGame = require('./MainGame');
 
 var SnatchRN = React.createClass({
   render: function() {
     return (
-      <Tiger/>
+      <MainGame/>
     );
   },
 });
