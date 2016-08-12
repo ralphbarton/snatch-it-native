@@ -22,19 +22,21 @@ class Tile extends Component {
 var styles = StyleSheet.create({
   tile: {
 //    position: 'absolute',
-	height: 40,
-	width: 40,
+	height: 36,
+	width: 36,
     backgroundColor: 'rgb(54,161,235)',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'center', // this is H-align
+    justifyContent: 'center',//this is V-align...
     borderStyle: 'solid',
     borderColor: '#777',
     borderWidth: 2,
-    borderRadius: 7,
+    borderRadius: 5,
+      margin:2,
+
   },
   text: {
     color: 'yellow',
-    fontSize: 30,
+    fontSize: 31,
   },
 
 });

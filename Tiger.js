@@ -45,8 +45,19 @@ class Tiger extends Component {
 		<View style={styles.yellMe}>
 
 		<View style={styles.ButtonsArea}>
-		<Text>Buttons Strip Top</Text>		
+
+		<View style={styles.buttonWrapper}>
+		<Text style={styles.button}>Button 1</Text>		
 	    </View>
+
+		<View style={styles.buttonWrapper}>
+		<Text style={styles.button}>Button 2</Text>
+	    </View>
+	    </View>
+
+
+
+
 
 
 		<View style={styles.GridArea}>
@@ -79,13 +90,17 @@ var styles = StyleSheet.create({
     },
     ButtonsArea: {
 	margin: 4,
-//	flexDirection: 'row', 
 	backgroundColor: '#D6FA89',
+	flex: 0.2,
+	flexDirection: 'row', 
     },
     GridArea: {
 	margin: 4,
-	height: 433,
-	backgroundColor: '#F0CDB1',
+//	height: 373,
+	flex: 1,
+	flexDirection: 'row', 
+	flexWrap: 'wrap',
+	backgroundColor: '#000',
     },
     ZonesArea: {
 	margin: 4,
@@ -101,7 +116,7 @@ var styles = StyleSheet.create({
     button: {
 	fontSize: 15,
 	textAlign: 'center',
-	color: '#FC8A0F',
+	color: 'black',
     },
 });
 
